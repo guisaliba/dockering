@@ -5,7 +5,7 @@
 
 ## Description
 
-I wanted to gather resources about Docker and understand how it works better. Code written here is probably based on my [notes about Docker](https://github.com/guisaliba/brain/tree/main/notes/docker) and is not intended to make sense or to have correct dir structure and organization.
+I wanted to gather resources about Docker and understand how it works. Code written here is probably based on my [notes about Docker](https://github.com/guisaliba/brain/tree/main/notes/docker) and is not intended to make sense or to have correct dir structure and organization.
 
 ## Technologies
 
