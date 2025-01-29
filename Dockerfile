@@ -1,14 +1,12 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:22.04
+FROM python:3.10-slim
 
-# install app dependencies
-RUN apt-get update && apt-get install -y python3 python3-pip
-RUN pip install flask==3.0.*
+# build stage for song app
+WORKDIR /src
 
-# install app
-COPY hello.py /
+COPY /src/models.py .
+COPY /src/routes.py .
 
-# final configuration
-ENV FLASK_APP=hello
-EXPOSE 8000
-CMD flask run --host 0.0.0.0 --port 8000
+RUN pip install -r requirements.txt
+
+CMD psql -U postgres -d song_db
