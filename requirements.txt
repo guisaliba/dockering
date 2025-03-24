@@ -1,3 +1,0 @@
-# install dependencies such as FastAPI
-uvicorn
-fastapi
