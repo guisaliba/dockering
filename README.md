@@ -12,7 +12,7 @@ I wanted to gather resources about Docker and understand how it works. Code writ
 This project was built using:
 
 - Docker
-- Python
+- Go
 
 ## Usage
 
