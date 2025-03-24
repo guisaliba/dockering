@@ -1,13 +1,10 @@
 version: "3.8"
 
 services:
-  web:
+  app:
     build: .
-    command: uvicorn main:app --host 0.0.0.0 --port 8000
     ports:
-      - "8080:8000"
-    volumes:
-      - .:/app
+      - "8080:8080"
 
   db:
     image: postgres:13
@@ -22,3 +19,8 @@ services:
 
 volumes:
   postgres_data:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "/home/guisaliba/projects/dockering/postgres-data"
